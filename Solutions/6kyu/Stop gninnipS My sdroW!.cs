@@ -17,28 +17,9 @@ namespace Solutions._6kyu
     /// </summary>
     public class Kata
     {
-        public static string ReverseString(string myStr)
-        {
-            char[] myArr = myStr.ToCharArray();
-            Array.Reverse(myArr);
-            return new string(myArr);
-        }
         public static string SpinWords(string sentence)
         {
-            var lst = sentence.Split(" ");
-            ArrayList words = new ArrayList();
-            foreach(var item in lst)
-            {
-                if (item.Length >= 5)
-                {
-                    words.Add(ReverseString(item)); 
-                }
-                else
-                {
-                    words.Add(item);
-                }
-            }
-            return String.Join(" ", (string[])words.ToArray(typeof(string))); 
+            return string.Join(" ", sentence.Split(' ').Select(str => str.Length >= 5 ? new string(str.Reverse().ToArray()) : str));
         }
     }
 }
