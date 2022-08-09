@@ -15,7 +15,7 @@ namespace Solutions._6kyu
     /// Strings passed in will consist of only letters and spaces. 
     /// Spaces will be included only when more than one word is present.
     /// </summary>
-    public class Kata
+    public static class Stop_gninnipS_My_sdroW
     {
         public static string SpinWords(string sentence)
         {

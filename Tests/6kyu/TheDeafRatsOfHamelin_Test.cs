@@ -2,7 +2,7 @@ using NUnit.Framework;
 using System;
 using Solutions._6kyu; 
 
-namespace Tests
+namespace Tests._6kyu
 {
     [TestFixture]
     public class TheDeafRatsOfHamelin
